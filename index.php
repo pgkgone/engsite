@@ -12,13 +12,15 @@
         }
         .in-row{
             display: inline-block;
-            font: 4vh "Times New Roman";
+            font: 5vh "Times New Roman";
             width: 15%;
         }
         .block{
-            background-image: url(physics1.png);
+            margin-bottom: 2px;
+            background-image: url(1.png);
+            border-radius: 17px; /* Уголки */
             background-size: 100%;
-            min-height: 17vh;
+            min-height: 16vh;
             width: 60%;
             margin-left: 20%;
         }
@@ -37,7 +39,7 @@ for ($i = 0; $i < 5; $i++) {
         </h1>
         <div class="content" align="center">
             <button class="in-row btn btn-secondary" >
-                I1
+                I
             </button>
             <button class="in-row btn btn-secondary">
                 II
@@ -56,7 +58,6 @@ for ($i = 0; $i < 5; $i++) {
     </div>
 EOT;
 }
-
 ?>
 </body>
 </html>
