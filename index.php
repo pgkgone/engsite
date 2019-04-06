@@ -12,7 +12,8 @@
 $DB = new SQLite3("db.sqlite");
 $result=$DB->query('SELECT title,image FROM menu');
 $array = array();
-$i = 1;
+$title = 0;
+$partsRome = array("I", "II", "III", "IV", "V");
 while($data = $result->fetchArray()){
     echo <<<EOT
     <div class="ramka">
@@ -21,26 +22,20 @@ while($data = $result->fetchArray()){
             $data[0]
         </h1>
         <div class="content" align="center">
-            <button class="in-row btn btn-secondary"  onclick="location.href = '/somePHP?subject=$i&part=1'">
-                I
+EOT;
+    for($part=0;$part<5;$part++){
+        echo<<<EOT
+            <button class="in-row btn btn-secondary"  onclick="location.href = '/tests.php?title=$title&part=$part'">
+                $partsRome[$part]
             </button>
-            <button class="in-row btn btn-secondary " onclick="location.href = '/somePHP?subject=$i&part=2'">
-                II
-            </button>
-            <button class="in-row btn btn-secondary"onclick="location.href = '/somePHP?subject=$i&part=3'">
-                III
-            </button>
-            <button class="in-row btn btn-secondary"onclick="location.href = '/somePHP?subject=$i&part=4'">
-                IV
-            </button>
-            <button class="in-row btn btn-secondary"onclick="location.href = '/somePHP?subject=$i&part=5'">
-                VI
-            </button>
+EOT;
+}
+    echo<<<EOT
         </div>
      </div>
     </div>
 EOT;
-    $i++;
+    $title++;
 }
 ?>
 </body>
