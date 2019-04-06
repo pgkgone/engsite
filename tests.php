@@ -14,7 +14,13 @@
         }
     </style>
 </head>
-
+<div class="buttonList">
+    <input type="button" class="next-button btn-primary" value="Next part" onclick="" />
+    <div class="menu-buttons">
+        <input type="button" class="part-chooser btn-primary" value="Choose part" onclick="" />
+        <input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="" />
+    </div>
+</div>
 <body>
 <div class="header">
     <div class="logo"> <img src="images/logo_small.png" height="100" width="100"></div>
