@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="2b4dbf4a-4dde-4a38-80f5-b6ff9b535921" name="Default Changelist" comment="1" />
-=======
     <list default="true" id="88fd0315-ad99-4fc0-93a4-2a6fc51f38ef" name="Default Changelist" comment="И добавлена аддоптивность конопок">
       <change afterPath="$PROJECT_DIR$/.idea/engsite.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -12,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,22 +20,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="442">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-=======
             <state>
               <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-    </leaf>
-  </component>
-  <component name="Git.Settings">
-=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor" />
@@ -53,28 +39,16 @@
         <option value="pgkg" />
       </list>
     </option>
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/README.md" />
-=======
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="417" />
-    <option name="y" value="18" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-=======
   <component name="PhpServers">
     <servers />
   </component>
@@ -83,17 +57,13 @@
     <option name="y" value="100" />
     <option name="width" value="1260" />
     <option name="height" value="758" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
       <pane id="Scope" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,31 +74,17 @@
             <path>
               <item name="engsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="engsite" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="css" type="462c0819:PsiDirectoryNode" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scope" />
-=======
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-=======
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -136,7 +92,6 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -150,67 +105,11 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/engsite/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-      </list>
-    </recent_temporary>
-  </component>
-=======
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="2b4dbf4a-4dde-4a38-80f5-b6ff9b535921" name="Default Changelist" comment="" />
-      <created>1554487901963</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1554487901963</updated>
-      <workItem from="1554487903111" duration="377000" />
-      <workItem from="1554488297881" duration="3038000" />
-      <workItem from="1554492513433" duration="675000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add div invis">
-      <created>1554488355557</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1554488355557</updated>
-    </task>
-    <task id="LOCAL-00002" summary="1">
-      <created>1554490805725</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1554490805725</updated>
-    </task>
-    <task id="LOCAL-00003" summary="1">
-      <created>1554492547690</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1554492547690</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4090000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
-=======
       <changelist id="88fd0315-ad99-4fc0-93a4-2a6fc51f38ef" name="Default Changelist" comment="" />
       <created>1554489539797</created>
       <option name="number" value="Default" />
@@ -229,7 +128,6 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25416666" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -241,15 +139,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.6023454" visible="true" weight="0.30985916" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.3976546" side_tool="true" visible="true" weight="0.30985916" />
-=======
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -259,29 +151,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-<<<<<<< HEAD
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add div invis" />
-    <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-=======
   <component name="VcsManagerConfiguration">
     <MESSAGE value="И добавлена аддоптивность конопок" />
     <option name="LAST_COMMIT_MESSAGE" value="И добавлена аддоптивность конопок" />
@@ -294,7 +163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
->>>>>>> b6c28e224cc1ec40612ad5eb091684953ec36b44
         </state>
       </provider>
     </entry>
