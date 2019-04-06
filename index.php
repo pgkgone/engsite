@@ -4,27 +4,7 @@
     <meta charset="UTF-8">
     <div><img src="images/logo_small.png" width="100" height="100"></div>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <style type="text/css">
-        .ramka{
-            background: #eeeee5;
-            font: 8pt Tahoma;
-            color: #2c2c2c;
-        }
-        .in-row{
-            display: inline-block;
-            font: 5vh "Times New Roman";
-            width: 15%;
-        }
-        .block{
-            margin-bottom: 2px;
-            border-radius: 17px; /* Уголки */
-            background-size: 100%;
-            min-height: 16vh;
-            width: 60%;
-            margin-left: 20%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css" >
 </head>
 <body>
 <?php
