@@ -58,6 +58,9 @@ for ($i = 0; $i < 5; $i++) {
     </div>
 EOT;
 }
+$DB = new SQLite3("db.sqlite");
+$DB->query('SELECT ')
+
 ?>
 </body>
 </html>
