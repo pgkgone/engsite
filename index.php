@@ -5,6 +5,7 @@
     <div><img src="images/logo_small.png" width="100" height="100"></div>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css" >
+    <title>Visual Tests</title>
 </head>
 <body>
 <?php
