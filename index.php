@@ -7,20 +7,20 @@
     <style type="text/css">
         .ramka{
             background: #eeeee5;
-            padding: 5px;
             font: 8pt Tahoma;
             color: #2c2c2c;
-            min-height: 17vh;
-            background-image: url(1.jpg);
         }
         .in-row{
             display: inline-block;
             font: 4vh "Times New Roman";
             width: 15%;
         }
-        .content{
-            margin-left: 20vh;
-            margin-right: 20vh;
+        .block{
+            background-image: url(physics1.png);
+            background-size: 100%;
+            min-height: 17vh;
+            width: 60%;
+            margin-left: 20%;
         }
 
     </style>
@@ -31,6 +31,7 @@ $div_titles = array("History of Physics", "interdisciplinary physics", "History 
 for ($i = 0; $i < 5; $i++) {
     echo <<<EOT
     <div class="ramka">
+    <div class="block">
         <h1 align="center">
             $div_titles[$i]
         </h1>
@@ -51,6 +52,7 @@ for ($i = 0; $i < 5; $i++) {
                 V1
             </button>
         </div>
+     </div>
     </div>
 EOT;
 }
