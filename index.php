@@ -17,7 +17,6 @@
         }
         .block{
             margin-bottom: 2px;
-            background-image: url(1.png);
             border-radius: 17px; /* Уголки */
             background-size: 100%;
             min-height: 16vh;
@@ -30,12 +29,12 @@
 <body>
 <?php
 $DB = new SQLite3("db.sqlite");
-$result=$DB->query('SELECT title FROM menu');
+$result=$DB->query('SELECT title,image FROM menu');
 $array = array();
 while($data = $result->fetchArray()){
     echo <<<EOT
     <div class="ramka">
-    <div class="block">
+    <div class="block displayed" style="background-image: url($data[1])">
         <h1 align="center">
             $data[0]
         </h1>
