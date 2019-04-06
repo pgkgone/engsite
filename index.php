@@ -29,13 +29,15 @@
 </head>
 <body>
 <?php
-$div_titles = array("History of Physics", "interdisciplinary physics", "History of Physics", "History of Physics", "History of Physics");
-for ($i = 0; $i < 5; $i++) {
+$DB = new SQLite3("db.sqlite");
+$result=$DB->query('SELECT title FROM menu');
+$array = array();
+while($data = $result->fetchArray()){
     echo <<<EOT
     <div class="ramka">
     <div class="block">
         <h1 align="center">
-            $div_titles[$i]
+            $data[0]
         </h1>
         <div class="content" align="center">
             <button class="in-row btn btn-secondary" >
@@ -58,15 +60,6 @@ for ($i = 0; $i < 5; $i++) {
     </div>
 EOT;
 }
-$DB = new SQLite3("db.sqlite");
-$result=$DB->query('SELECT title FROM menu');
-$array = array();
-while($data = $result->fetchArray(SQLITE3_ASSOC))
-{
-     echo $data;
-}
-
-
 ?>
 </body>
 </html>

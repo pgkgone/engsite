@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f72df31a-7f48-48c9-a1ad-e5dc1d130ae5" name="Default Changelist" comment="1">
+    <list default="true" id="f72df31a-7f48-48c9-a1ad-e5dc1d130ae5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+            <state relative-caret-position="536">
+              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -44,7 +44,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="419" />
     <option name="y" value="9" />
     <option name="width" value="1400" />
@@ -108,7 +108,7 @@
       <updated>1554489539797</updated>
       <workItem from="1554489540831" duration="2339000" />
       <workItem from="1554492169973" duration="581000" />
-      <workItem from="1554580343807" duration="2815000" />
+      <workItem from="1554580343807" duration="3593000" />
     </task>
     <task id="LOCAL-00001" summary="заумтили пхп">
       <created>1554571224509</created>
@@ -138,19 +138,27 @@
       <option name="project" value="LOCAL" />
       <updated>1554583163926</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="?">
+      <created>1554583328862</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554583328862</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8686000" />
+    <option name="totallyTimeSpent" value="9464000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="419" y="9" width="1400" height="999" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35373133" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -177,7 +185,8 @@
     <MESSAGE value="заумтили пхп" />
     <MESSAGE value="database" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="?" />
+    <option name="LAST_COMMIT_MESSAGE" value="?" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
@@ -190,8 +199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+        <state relative-caret-position="536">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
         </state>
       </provider>
     </entry>
