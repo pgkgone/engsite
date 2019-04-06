@@ -59,7 +59,13 @@ for ($i = 0; $i < 5; $i++) {
 EOT;
 }
 $DB = new SQLite3("db.sqlite");
-$DB->query('SELECT ')
+$result=$DB->query('SELECT title FROM menu');
+$array = array();
+while($data = $result->fetchArray(SQLITE3_ASSOC))
+{
+     echo $data;
+}
+
 
 ?>
 </body>
