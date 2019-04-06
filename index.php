@@ -32,7 +32,7 @@ for ($i = 0; $i < 5; $i++) {
     echo <<<EOT
     <div class="ramka">
         <h1 align="center">
-            $div_titles[$i];
+            $div_titles[$i]
         </h1>
         <div class="content" align="center">
             <button class="in-row btn btn-secondary" >
