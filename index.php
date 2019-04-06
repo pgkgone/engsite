@@ -31,6 +31,8 @@
 $DB = new SQLite3("db.sqlite");
 $result=$DB->query('SELECT title,image FROM menu');
 $array = array();
+$i = 0;
+$parts = array("I", "II", "III", "IV", "V");
 while($data = $result->fetchArray()){
     echo <<<EOT
     <div class="ramka">
@@ -39,25 +41,22 @@ while($data = $result->fetchArray()){
             $data[0]
         </h1>
         <div class="content" align="center">
-            <button class="in-row btn btn-secondary" >
-                I
+EOT;
+    for ($j = 0; $j < 5; $j++) {
+    echo <<<EOT
+            
+            <a href="tests.php?title=$i&part=$j"><button class="in-row btn btn-secondary" >
+                {$parts[$j]}
             </button>
-            <button class="in-row btn btn-secondary">
-                II
-            </button>
-            <button class="in-row btn btn-secondary">
-                III
-            </button>
-            <button class="in-row btn btn-secondary">
-                IV
-            </button>
-            <button class="in-row btn btn-secondary">
-                V1
-            </button>
+            </a>
+EOT;
+    }
+    echo <<<EOT
         </div>
      </div>
     </div>
 EOT;
+$i++;
 }
 ?>
 </body>

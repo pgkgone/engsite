@@ -14,13 +14,7 @@
         }
     </style>
 </head>
-<div class="buttonList">
-    <input type="button" class="next-button btn-primary" value="Next part" onclick="" />
-    <div class="menu-buttons">
-        <input type="button" class="part-chooser btn-primary" value="Choose part" onclick="" />
-        <input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="" />
-    </div>
-</div>
+
 <body>
 <div class="header">
     <div class="logo"> <img src="images/logo_small.png" height="100" width="100"></div>
@@ -34,22 +28,20 @@
         </a>
 </div>
 </div>
-
-<div id="tabs">
-    <ul>
-        <li> Roblox!! </li>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xHQHtBB8Rng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <li> Roblox!! </li>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cql8p4VkbDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <li> Roblox!! </li>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0a5F7TrHA9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </ul>
+<div class="buttonList">
+    <input type="button" class="next-button btn-primary" value="Next part" onclick="" />
+    <div class="menu-buttons">
+        <input type="button" class="part-chooser btn-primary" value="Choose part" onclick="" />
+        <input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="" />
+    </div>
 </div>
-
-<div class="text">
-    <a>Simple Task Text</a>
+<div class="buttonList">
+    <?php
+        $DB = new SQLite3("db.sqlite");
+        $result=$DB->query("SELECT content FROM tests WHERE title = '". $_GET["title"]."' AND part = '".   $_GET["part"]. "'");
+        echo $result->fetchArray()[0];
+    ?>
 </div>
-
 <div class="buttonList">
     <input type="button" class="next-button btn-primary" value="Next part" onclick="" />
     <div class="menu-buttons">
