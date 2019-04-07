@@ -15,24 +15,24 @@ $array = array();
 $title = 0;
 $partsRome = array("I", "II", "III", "IV", "V");
 while($data = $result->fetchArray()){
-    echo <<<EOT
+echo <<<EOT
     <div class="ramka">
-    <div class="block displayed" style="background-image: url($data[1])">
-        <h1 align="center">
-            $data[0]
-        </h1>
-        <div class="content" align="center">
+        <div class="block displayed" style="background-image: url($data[1])">
+            <h1 align="center">
+                $data[0]
+            </h1>
+            <div class="content" align="center">
 EOT;
     for($part=0;$part<5;$part++){
-        echo<<<EOT
-            <button class="in-row btn btn-secondary"  onclick="location.href = '/tests.php?title=$title&part=$part'">
-                $partsRome[$part]
-            </button>
+echo <<<EOT
+                <button class="in-row btn btn-secondary"  onclick="location.href = 'tests.php?title=$title&part=$part'">
+                    $partsRome[$part]
+                </button>
 EOT;
-}
-    echo<<<EOT
+    }
+echo <<<EOT
+            </div>
         </div>
-     </div>
     </div>
 EOT;
     $title++;
