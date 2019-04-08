@@ -15,13 +15,33 @@
     </style>
 </head>
 <?php
-   function ContentProcessor($content)
-   {
-       $inputbox =
-        "
-            
-        ";
-   }
+class ContentProcessor{
+    public $InputNumber = 0;
+    public $InputKeys = array();
+
+    function InputProcessor(&$content)
+    {
+        while (($pos = strpos($content, "input{")) != false){
+            $content = substr_replace($content, "", $pos, 6);
+            $posend = strpos($content, "}");
+            $content = substr_replace($content, "", $posend, 1);
+            $key = substr($content, $pos, $posend - $pos);
+            $content = substr_replace($content, "", $pos, $posend - $pos);
+            $InputKeys[$this->InputNumber] = $key;
+            $content = substr_replace($content, $this->PasteInputbox($InputKeys[$this->InputNumber--]), $pos, 0 );
+            $this->InputNumber++;
+        }
+    }
+
+    function PasteInputbox($placeholder){
+        $inputbox =
+            '
+            <input type="text" size="20" placeholder="'.$placeholder.'">
+        ';
+        return $inputbox;
+    }
+}
+
 ?>
 ?>
 <body>
@@ -47,9 +67,13 @@
     </div>
     <div class="buttonList">
         <?php
+
             $DB = new SQLite3("db.sqlite");
             $result=$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "");
-            echo $result->fetchArray()[0];
+            $Processor = new ContentProcessor();
+            $content = $result->fetchArray()[0];
+            $Processor->InputProcessor($content);
+            echo $content;
         ?>
     </div>
     <div class="buttonList">
