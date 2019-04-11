@@ -13,6 +13,23 @@
             margin-left: 21px;
         }
     </style>
+    <script>
+        var urls = ["https://www.youtube.com/embed/Z_62FhUI_Ew","https://www.youtube.com/embed/Z_62FhUI_Ew"];
+        var curl = 0;
+        function changeURL(frame)
+        {
+            if(curl == 0)
+            {
+                frame.src = urls[0];
+                curl = 1;
+            }
+            else
+            {
+                frame.src = urls[1];
+                curl = 0;
+            }
+        }
+    </script>
 </head>
 <?php
 class ContentProcessor{
@@ -91,6 +108,8 @@ function createFor1stPart(){
                 As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
                 There are two extra headings which you do not need to use.
             </a>
+            <iframe width="560" height="315" src="" frameborder="0" id="myframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <input type="button" value="Сменить" onclick="changeURL(document.getElementById('myframe'))">
         </div>
     </div>
     <?php
