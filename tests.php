@@ -85,6 +85,7 @@ EOT;
 }
 
 function createFor1stPart(){
+    echo '<select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select>';
     $partsAlpha = array("A", "B", "C", "D", "E","F","G","H");
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "")->fetchArray()[0];
@@ -119,36 +120,12 @@ function setBeautyTitle(){
                 As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
                 There are two extra headings which you do not need to use.
             </a>
-            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264'
-                   poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}'>
                 <p class='vjs-no-js'>
                     To view this video please enable JavaScript, and consider upgrading to a web browser that
                     <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
                 </p>
             </video>
-            <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
-            <input type="button" value="Сменить" onclick="changeURL(document.getElementById('myframe'))">
-            <script>
-                var myVideo = videojs('my-video');
-                console.log(myVideo);
-                if (1==1){
-                    myVideo.src([
-                        {src: "2.mp4",type: "video/mp4"},
-                    ]);
-                }
-                else if (source == "Government"){
-                    myVideo.src([
-                        {type: "application/x-mpegURL", src: "http://mycdn/playlist.m3u8"},
-                        {type: "rtmp/mp4", src: "rtmp://mycdn"}
-                    ]);
-                }
-                else if (source == "Regional"){
-                    myVideo.src([
-                        {type: "application/x-mpegURL", src: "http://mycdn/playlist.m3u8"},
-                        {type: "rtmp/mp4", src: "rtmp://mysource"}
-                    ]);
-                }
-            </script>
         </div>
     </div>
     <?php
@@ -168,5 +145,24 @@ function setBeautyTitle(){
     createButtonsList();
     ?>
 </div>
+<script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
+<input type="button" value="Сменить" onclick="changeURL(document.getElementById('myframe'))">
+<script>
+    var myVideo = videojs('my-video');
+    var dropdown = document.getElementById('videoSelector');
+    dropdown.addEventListener("change", function() {
+        var source = dropdown.selectedIndex;
+        console.log(source)
+        if (source == 1) {
+            myVideo.src([
+                {src: "2.mp4", type: "video/mp4"},
+            ]);
+        } else if (source == 2) {
+            myVideo.src([
+                {src: "3.mp4", type: "video/mp4"},
+            ]);
+        }
+    })
+</script>
 </body>
 </html>
