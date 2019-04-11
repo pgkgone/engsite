@@ -8,6 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Visual Tests</title>
     <script>
+        for(var i = 0; i < 5; i++)
+        {
+            $("#" + i + ".content").slideUp("slow");
+        }
             $(document).ready(function () {
 
                 $(".block").click(function () {
@@ -34,7 +38,7 @@ echo <<<EOT
                 $data[0]
             </h1>
         </div>
-        <div class="content" id="$title" align="center">
+        <div class="content" id="$title" align="center" style="display: none;">
 EOT;
     for($part=0;$part<5;$part++){
 echo <<<EOT
