@@ -8,12 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Visual Tests</title>
     <script>
-        for(var i = 0; i < 5; i++)
-        {
-            $("#" + i + ".content").slideUp("slow");
-        }
             $(document).ready(function () {
-
                 $(".block").click(function () {
                     var idsel = this.id;
                     console.log(idsel);
