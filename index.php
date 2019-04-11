@@ -5,7 +5,18 @@
     <div><img src="images/logo_small.png" width="100" height="100"></div>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Visual Tests</title>
+    <script>
+            $(document).ready(function () {
+
+                $(".block").click(function () {
+                    var idsel = this.id;
+                    console.log(idsel);
+                    $("#" + idsel + ".content").slideToggle("slow");
+                });
+            });
+    </script>
 </head>
 <body>
 <div>
@@ -18,12 +29,12 @@ $partsRome = array("I", "II", "III", "IV", "V");
 while($data = $result->fetchArray()){
 echo <<<EOT
     <div class="ramka">
-        <div class="block displayed" style="background-image: url($data[1])">
+        <div class="block displayed" id="$title" style="background-image: url($data[1])">
             <h1 align="center">
                 $data[0]
             </h1>
         </div>
-        <div class="content" align="center">
+        <div class="content" id="$title" align="center">
 EOT;
     for($part=0;$part<5;$part++){
 echo <<<EOT
