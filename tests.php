@@ -58,6 +58,10 @@ class ContentProcessor{
         return $inputbox;
     }
 }
+
+function returnHref($a,$b){
+    return "'"."tests.php?title=".$a."&part=".$b."'";
+}
 function createButtonsList(){
     echo <<<EOT
      <div class="buttonList" align="center">
@@ -66,15 +70,11 @@ EOT;
     $part = (int)$_GET['part'];
     $title= (int)$_GET['title'];
     if($part>0){
-        $part=$part+1;
-        $st="location.href = tests.php?title=".$title."&part=$part"."";
-        echo '<input type="button" class="prev-button btn-primary" value="Prev part" onclick='. $st.'>';
+        echo '<input type="button" class="prev-button btn-primary" value="Prev part" onclick="location.href = '.returnHref($title,$part-1).'">';
     }
-    echo  '<input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="" />';
-    if($part<5){
-        $part=$part+1;
-        $st="location.href = tests.php?title=".$title."&part=$part"."";
-        echo '<input type="button" class="next-button btn-primary" value="Next part" onclick='. $st.'>';
+    echo  '<input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="location.href = \'index.php\'" />';
+    if($part<4){
+        echo '<input type="button" class="next-button btn-primary" value="Next part" onclick="location.href = '.returnHref($title,$part+1).'">';
     }
     echo <<<EOT
 </div>
@@ -103,7 +103,7 @@ function setBeautyTitle(){
     $title= (int)$_GET['title']+1;
     $partsRome = array("I", "II", "III", "IV", "V");
     $title=$DB->query("SELECT title FROM MENU WHERE id =".$title.";")->fetchArray()[0];
-    echo "<title>".$title.": Part — ".$partsRome[$part]."</title>";
+    echo "<title>".$title.": Part — ".$partsRome[$part-1]."</title>";
 }
 ?>
 <body>
