@@ -58,13 +58,13 @@ EOT;
 }
 
 function createFor1stPart(){
-    echo '<div align="center"><select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select></div>';
+    echo '<div align="center"><div style="display: inline-block"><a>Choose Video: </a><select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select></div></div>';
     $partsAlpha = array("A", "B", "C", "D", "E","F","G","H");
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "")->fetchArray()[0];
     $arr=explode("|",$result);
     for($i=0;$i<8;$i++){
-        echo "<h3 style='margin-left: 5vh'>$arr[$i]</h3>";
+        echo "<h4 style='margin-left: 5vh'>$arr[$i]</h4>";
     }
     echo "<div style='display: inline-block; margin-left: 5vh'>";
     for($i=0;$i<8;$i++){
@@ -80,15 +80,15 @@ function setBeautyTitle(){
     $partsRome = array("I", "II", "III", "IV", "V");
     $title=$DB->query("SELECT title FROM MENU WHERE id =".$title.";")->fetchArray()[0];
     echo "<title>".$title.": Part — ".$partsRome[$part-1]."</title>";
+    echo "<h2 align='center' style='color: #1d2124' class='h1part' '>".$title.": Part - ".$partsRome[$part-1]."</h1>";
 }
 ?>
 <body>
 <div class="content">
     <div class="header">
-        <div class="Part 1">
-            <h1 align="center"><span>Part I</span></h1>
+        <div class="Part">
             <?php
-            createButtonsList();
+            setBeautyTitle();
             ?>
         </div>
         <div class="task">
@@ -107,7 +107,6 @@ function setBeautyTitle(){
         </div>
     </div>
     <?php
-    setBeautyTitle();
     if((int)$_GET['part']==0){
         createFor1stPart();
         echo '<script src="js/video-picker.js"></script>';
