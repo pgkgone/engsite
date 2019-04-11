@@ -68,7 +68,7 @@ function createFor1stPart(){
     }
     echo "<div style='display: inline-block; margin-left: 5vh'>";
     for($i=0;$i<8;$i++){
-        echo '<a>'.$partsAlpha[$i].': </a><select id="selectItem" style="margin-right: 2vh"><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select>';
+        echo '<a>'.$partsAlpha[$i].': </a><select id="selectItem" style="margin-right: 2vh"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select>';
     }
     echo "</div>";
 }
