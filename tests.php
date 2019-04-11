@@ -96,6 +96,15 @@ function createFor1stPart(){
     }
     echo "</div>";
 }
+
+function setBeautyTitle(){
+    $DB = new SQLite3("db.sqlite");
+    $part = (int)$_GET['part']+1;
+    $title= (int)$_GET['title']+1;
+    $partsRome = array("I", "II", "III", "IV", "V");
+    $title=$DB->query("SELECT title FROM MENU WHERE id =".$title.";")->fetchArray()[0];
+    echo "<title>".$title.": Part — ".$partsRome[$part]."</title>";
+}
 ?>
 <body>
 <div class="content">
@@ -113,8 +122,8 @@ function createFor1stPart(){
         </div>
     </div>
     <?php
+    setBeautyTitle();
     createButtonsList();
-    echo "<title>History of Physics - Part </title>"; //!!!!!!!!!!!!!!! сделать надо
     if((int)$_GET['part']==0){
         createFor1stPart();
     }else {
