@@ -22,7 +22,8 @@ echo <<<EOT
             <h1 align="center">
                 $data[0]
             </h1>
-            <div class="content" align="center">
+        </div>
+        <div class="content" align="center">
 EOT;
     for($part=0;$part<5;$part++){
 echo <<<EOT
@@ -32,7 +33,7 @@ echo <<<EOT
 EOT;
     }
 echo <<<EOT
-            </div>
+            
         </div>
     </div>
 EOT;
