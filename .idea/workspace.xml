@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f72df31a-7f48-48c9-a1ad-e5dc1d130ae5" name="Default Changelist" comment="Чистка!!!!">
+    <list default="true" id="f72df31a-7f48-48c9-a1ad-e5dc1d130ae5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests.php" afterDir="false" />
     </list>
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="70" column="127" selection-start-line="70" selection-start-column="127" selection-end-line="70" selection-end-column="127" />
+            <state relative-caret-position="180">
+              <caret line="60" column="216" selection-start-line="60" selection-start-column="216" selection-end-line="60" selection-end-column="216" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -39,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bootstrap.bundle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="17442">
               <caret line="1030" column="18" selection-start-line="1030" selection-start-column="14" selection-end-line="1030" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/video-picker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="34">
+              <caret line="2" column="53" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -81,6 +81,7 @@
       <find>/a</find>
       <find>title</find>
       <find>jque</find>
+      <find>pick</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,7 +147,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,7 +189,8 @@
       <workItem from="1554679676319" duration="4602000" />
       <workItem from="1554998909909" duration="10000" />
       <workItem from="1554999293814" duration="1233000" />
-      <workItem from="1555001501344" duration="729000" />
+      <workItem from="1555001501344" duration="2615000" />
+      <workItem from="1555004901543" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="заумтили пхп">
       <created>1554571224509</created>
@@ -351,17 +353,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554999817709</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1">
+      <created>1555002793949</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1555002793949</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34082000" />
+    <option name="totallyTimeSpent" value="36200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,12 +409,12 @@
     <MESSAGE value="Для 1 части создан обработчик" />
     <MESSAGE value="Видео!" />
     <MESSAGE value="Beauty Title" />
-    <MESSAGE value="1" />
     <MESSAGE value="Испровил кнопки навигации" />
     <MESSAGE value="Добавил Видео" />
     <MESSAGE value="Работает пикер видео. Но, конечно же нужно только для Part1" />
     <MESSAGE value="Чистка!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Чистка!!!!" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
@@ -418,23 +427,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/video-picker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap.bundle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="17442">
           <caret line="1030" column="18" selection-start-line="1030" selection-start-column="14" selection-end-line="1030" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -442,10 +437,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/video-picker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="70" column="127" selection-start-line="70" selection-start-column="127" selection-end-line="70" selection-end-column="127" />
+        <state relative-caret-position="180">
+          <caret line="60" column="216" selection-start-line="60" selection-start-column="216" selection-end-line="60" selection-end-column="216" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
