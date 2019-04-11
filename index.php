@@ -8,6 +8,7 @@
     <title>Visual Tests</title>
 </head>
 <body>
+<div>
 <?php
 $DB = new SQLite3("db.sqlite");
 $result=$DB->query('SELECT title,image FROM menu');
@@ -38,5 +39,6 @@ EOT;
     $title++;
 }
 ?>
+</div>
 </body>
 </html>
