@@ -1,18 +1,56 @@
 .ramka{
-    background: #0c5460;
     font: 8pt Tahoma;
     color: #2c2c2c;
+    display: grid;
+    margin-bottom: 1%;
 }
 .in-row{
     display: inline-block;
     font: 5vh "Times New Roman";
-    width: 15%;
+    width: 17%;
+    text-align: center;
+    /* width: 100px; */
+    cursor: pointer;
+    padding: 15px 20px;
+    /* background: red; */
+    display: inline-block;
+    border-radius: 6px;
+    border-color: #cacaca;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFF!important;
+    background-image: -moz-linear-gradient(-45deg,#f761a1 0,#8c1bab 100%);
+    background-image: -webkit-linear-gradient(-45deg,#f1f1f1 0,#adadad 100%);
+    background-image: -ms-linear-gradient(-45deg,#f761a1 0,#8c1bab 100%);
+    box-shadow: 0 3px 13px 0 rgba(14,9,73,.2), 0 11px 21px 0 rgba(255,166,220,.004);
+    margin-left: 1px;
+    margin-right: 1px;
 }
 .block{
-    margin-bottom: 2px;
-    border-radius: 17px; /* Уголки */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-size: 100%;
-    min-height: 16vh;
+    background-color: black;
+    min-height: 15vh;
     width: 60%;
     margin-left: 20%;
+    padding-top: 4vh;
+    text-transform: uppercase;
+
+}
+.content{
+    margin-bottom: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-size: 100%;
+    min-height: 12vh;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #ececec;
+    padding-top: 1.75%;
+    border: 1px solid #7d7d7d;
+}
+h1{
+    color: #f7f7f7;
+    font-size: 4vw;
 }
