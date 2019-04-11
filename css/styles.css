@@ -54,3 +54,13 @@ h1{
     color: #f7f7f7;
     font-size: 4vw;
 }
+
+.main-menu-button{
+    margin-top: 5px;
+}
+.next-button{
+    margin-top: 5px;
+}
+.task-text{
+    margin-left: 21px;
+}

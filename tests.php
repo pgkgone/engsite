@@ -2,34 +2,9 @@
 <head>
     <div class="logo"> <img src="images/logo_small.png" height="100" width="100"></div>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <style type="text/css">
-        .main-menu-button{
-            margin-top: 5px;
-        }
-        .next-button{
-            margin-top: 5px;
-        }
-        .task-text{
-            margin-left: 21px;
-        }
-    </style>
-    <script>
-        var urls = ["https://www.youtube.com/embed/Z_62FhUI_Ew","https://www.youtube.com/embed/Z_62FhUI_Ew"];
-        var curl = 0;
-        function changeURL(frame)
-        {
-            if(curl == 0)
-            {
-                frame.src = urls[0];
-                curl = 1;
-            }
-            else
-            {
-                frame.src = urls[1];
-                curl = 0;
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/styles.css" >
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <?php
 class ContentProcessor{
@@ -58,6 +33,10 @@ class ContentProcessor{
         return $inputbox;
     }
 }
+
+function returnHref($a,$b){
+    return "'"."tests.php?title=".$a."&part=".$b."'";
+}
 function createButtonsList(){
     echo <<<EOT
      <div class="buttonList" align="center">
@@ -66,15 +45,11 @@ EOT;
     $part = (int)$_GET['part'];
     $title= (int)$_GET['title'];
     if($part>0){
-        $part=$part+1;
-        $st="location.href = tests.php?title=".$title."&part=$part"."";
-        echo '<input type="button" class="prev-button btn-primary" value="Prev part" onclick='. $st.'>';
+        echo '<input type="button" class="prev-button btn-primary" value="Prev part" onclick="location.href = '.returnHref($title,$part-1).'">';
     }
-    echo  '<input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="" />';
-    if($part<5){
-        $part=$part+1;
-        $st="location.href = tests.php?title=".$title."&part=$part"."";
-        echo '<input type="button" class="next-button btn-primary" value="Next part" onclick='. $st.'>';
+    echo  '<input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="location.href = \'index.php\'" />';
+    if($part<4){
+        echo '<input type="button" class="next-button btn-primary" value="Next part" onclick="location.href = '.returnHref($title,$part+1).'">';
     }
     echo <<<EOT
 </div>
@@ -83,6 +58,7 @@ EOT;
 }
 
 function createFor1stPart(){
+    echo '<select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select>';
     $partsAlpha = array("A", "B", "C", "D", "E","F","G","H");
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "")->fetchArray()[0];
@@ -103,7 +79,7 @@ function setBeautyTitle(){
     $title= (int)$_GET['title']+1;
     $partsRome = array("I", "II", "III", "IV", "V");
     $title=$DB->query("SELECT title FROM MENU WHERE id =".$title.";")->fetchArray()[0];
-    echo "<title>".$title.": Part — ".$partsRome[$part]."</title>";
+    echo "<title>".$title.": Part — ".$partsRome[$part-1]."</title>";
 }
 ?>
 <body>
@@ -117,8 +93,12 @@ function setBeautyTitle(){
                 As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
                 There are two extra headings which you do not need to use.
             </a>
-            <iframe width="560" height="315" src="" frameborder="0" id="myframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <input type="button" value="Сменить" onclick="changeURL(document.getElementById('myframe'))">
+            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}'>
+                <p class='vjs-no-js'>
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+                </p>
+            </video>
         </div>
     </div>
     <?php
@@ -126,6 +106,7 @@ function setBeautyTitle(){
     createButtonsList();
     if((int)$_GET['part']==0){
         createFor1stPart();
+        echo '<script src="js/video-picker.js"></script>';
     }else {
         $DB = new SQLite3("db.sqlite");
         $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
@@ -138,5 +119,6 @@ function setBeautyTitle(){
     createButtonsList();
     ?>
 </div>
+<script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
 </body>
 </html>
