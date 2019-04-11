@@ -14,7 +14,7 @@
         }
     </style>
     <script>
-        var urls = ["https://www.youtube.com/embed/Z_62FhUI_Ew","https://www.youtube.com/embed/Z_62FhUI_Ew"];
+        var urls = ["2.mp4","3.mp4"];
         var curl = 0;
         function changeURL(frame)
         {
@@ -30,6 +30,8 @@
             }
         }
     </script>
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
 <?php
 class ContentProcessor{
@@ -117,8 +119,36 @@ function setBeautyTitle(){
                 As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
                 There are two extra headings which you do not need to use.
             </a>
-            <iframe width="560" height="315" src="" frameborder="0" id="myframe" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264'
+                   poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+                <p class='vjs-no-js'>
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+                </p>
+            </video>
+            <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
             <input type="button" value="Сменить" onclick="changeURL(document.getElementById('myframe'))">
+            <script>
+                var myVideo = videojs('my-video');
+                console.log(myVideo);
+                if (1==1){
+                    myVideo.src([
+                        {src: "2.mp4",type: "video/mp4"},
+                    ]);
+                }
+                else if (source == "Government"){
+                    myVideo.src([
+                        {type: "application/x-mpegURL", src: "http://mycdn/playlist.m3u8"},
+                        {type: "rtmp/mp4", src: "rtmp://mycdn"}
+                    ]);
+                }
+                else if (source == "Regional"){
+                    myVideo.src([
+                        {type: "application/x-mpegURL", src: "http://mycdn/playlist.m3u8"},
+                        {type: "rtmp/mp4", src: "rtmp://mysource"}
+                    ]);
+                }
+            </script>
         </div>
     </div>
     <?php
