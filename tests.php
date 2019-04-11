@@ -58,7 +58,7 @@ EOT;
 }
 
 function createFor1stPart(){
-    echo '<select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select>';
+    echo '<div align="center"><select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select></div>';
     $partsAlpha = array("A", "B", "C", "D", "E","F","G","H");
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "")->fetchArray()[0];
@@ -68,7 +68,7 @@ function createFor1stPart(){
     }
     echo "<div style='display: inline-block; margin-left: 5vh'>";
     for($i=0;$i<8;$i++){
-        echo '<a>'.$partsAlpha[$i].': </a><select id="selectItem" style="margin-right: 2vh"><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select>';
+        echo '<a>'.$partsAlpha[$i].': </a><select id="selectItem" style="margin-right: 2vh"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select>';
     }
     echo "</div>";
 }
@@ -87,23 +87,27 @@ function setBeautyTitle(){
     <div class="header">
         <div class="Part 1">
             <h1 align="center"><span>Part I</span></h1>
+            <?php
+            createButtonsList();
+            ?>
         </div>
         <div class="task">
             <a class="task-text"> You will watch six short video films about some great discoveries in physics made by outstanding scientists.
                 As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
                 There are two extra headings which you do not need to use.
             </a>
+            <div align="center">
             <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}'>
                 <p class='vjs-no-js'>
                     To view this video please enable JavaScript, and consider upgrading to a web browser that
                     <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
                 </p>
             </video>
+            </div>
         </div>
     </div>
     <?php
     setBeautyTitle();
-    createButtonsList();
     if((int)$_GET['part']==0){
         createFor1stPart();
         echo '<script src="js/video-picker.js"></script>';
