@@ -2,34 +2,7 @@
 <head>
     <div class="logo"> <img src="images/logo_small.png" height="100" width="100"></div>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <style type="text/css">
-        .main-menu-button{
-            margin-top: 5px;
-        }
-        .next-button{
-            margin-top: 5px;
-        }
-        .task-text{
-            margin-left: 21px;
-        }
-    </style>
-    <script>
-        var urls = ["2.mp4","3.mp4"];
-        var curl = 0;
-        function changeURL(frame)
-        {
-            if(curl == 0)
-            {
-                frame.src = urls[0];
-                curl = 1;
-            }
-            else
-            {
-                frame.src = urls[1];
-                curl = 0;
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/styles.css" >
     <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </head>
@@ -133,6 +106,7 @@ function setBeautyTitle(){
     createButtonsList();
     if((int)$_GET['part']==0){
         createFor1stPart();
+        echo '<script src="js/video-picker.js"></script>';
     }else {
         $DB = new SQLite3("db.sqlite");
         $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
@@ -146,23 +120,5 @@ function setBeautyTitle(){
     ?>
 </div>
 <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
-<input type="button" value="Сменить" onclick="changeURL(document.getElementById('myframe'))">
-<script>
-    var myVideo = videojs('my-video');
-    var dropdown = document.getElementById('videoSelector');
-    dropdown.addEventListener("change", function() {
-        var source = dropdown.selectedIndex;
-        console.log(source)
-        if (source == 1) {
-            myVideo.src([
-                {src: "2.mp4", type: "video/mp4"},
-            ]);
-        } else if (source == 2) {
-            myVideo.src([
-                {src: "3.mp4", type: "video/mp4"},
-            ]);
-        }
-    })
-</script>
 </body>
 </html>
