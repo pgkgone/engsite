@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/styles.css" >
     <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
     <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <?php
 class ContentProcessor{
@@ -39,15 +41,15 @@ function returnHref($a,$b){
 }
 function createButtonsList(){
     echo <<<EOT
-     <div class="buttonList" align="center">
+     <div class="buttonList" align="center" style="margin-bottom: 3vh">
         <div class="menu-buttons">
 EOT;
     $part = (int)$_GET['part'];
     $title= (int)$_GET['title'];
     if($part>0){
-        echo '<input type="button" class="prev-button btn-primary" value="Prev part" onclick="location.href = '.returnHref($title,$part-1).'">';
+        echo '<input type="button" class="prev-button btn-primary" value="Prev part" style="margin-right:0.75vw"  onclick="location.href = '.returnHref($title,$part-1).'">';
     }
-    echo  '<input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="location.href = \'index.php\'" />';
+    echo  '<input type="button" class="main-menu-button btn-primary" style="margin-right:0.75vw" value="Main menu" onclick="location.href = \'index.php\'" />';
     if($part<4){
         echo '<input type="button" class="next-button btn-primary" value="Next part" onclick="location.href = '.returnHref($title,$part+1).'">';
     }
@@ -68,9 +70,10 @@ function createFor1stPart(){
     }
     echo "<div style='display: inline-block; margin-left: 5vh'>";
     for($i=0;$i<8;$i++){
-        echo '<a>'.$partsAlpha[$i].': </a><select id="selectItem" style="margin-right: 2vh"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select>';
+        echo '<a>'.$partsAlpha[$i].': </a><select id="'.selectItem.$i.'" style="margin-right: 2vh"><option value="">Choose...</option><option id="1">1</option><option id="2">2</option><option id="3">3</option><option id="4">4</option><option id="5">5</option><option id="6">6</option><option id="7">7</option><option id="8">8</option></select>';;
     }
     echo "</div>";
+    echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
 }
 
 function setBeautyTitle(){
@@ -79,7 +82,7 @@ function setBeautyTitle(){
     $title= (int)$_GET['title']+1;
     $partsRome = array("I", "II", "III", "IV", "V");
     $title=$DB->query("SELECT title FROM MENU WHERE id =".$title.";")->fetchArray()[0];
-    echo "<title>".$title.": Part — ".$partsRome[$part-1]."</title>";
+    echo "<title class='main-text-only-one' id=".(int)$_GET['title'].">".$title.": Part — ".$partsRome[$part-1]."</title>";
     echo "<h2 align='center' style='color: #1d2124' class='h1part' '>".$title.": Part - ".$partsRome[$part-1]."</h1>";
 }
 ?>
@@ -91,7 +94,7 @@ function setBeautyTitle(){
             setBeautyTitle();
             ?>
         </div>
-        <div class="task">
+        <div class="task" style="margin-left: 4vh">
             <a class="task-text"> You will watch six short video films about some great discoveries in physics made by outstanding scientists.
                 As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
                 There are two extra headings which you do not need to use.
@@ -110,6 +113,7 @@ function setBeautyTitle(){
     if((int)$_GET['part']==0){
         createFor1stPart();
         echo '<script src="js/video-picker.js"></script>';
+        echo '<script src="js/send-answer.js"></script>';
     }else {
         $DB = new SQLite3("db.sqlite");
         $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
