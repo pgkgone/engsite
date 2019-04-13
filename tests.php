@@ -74,7 +74,25 @@ function createFor1stPart(){
     echo "</div>";
     echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
 }
-
+function createFor3rdPart(){
+    echo '<div align="center"></div>';
+    $DB = new SQLite3("db.sqlite");
+    $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];
+    $question=explode("||",$result); // || - разделение для вопросов | - разделение для ответов
+    echo "<div style='display: inline-block; margin-left: 5vh'>";
+    for($i=0;$i<7;$i++){
+        echo "<form>";
+        $arr = explode("|", $question[$i]);
+        echo "<h6>$arr[0]</h6>";
+        for($j=1;$j<4;$j++) {
+            echo "<input type='radio' value='".($j - 1) ."' name='radioInput".$i."'>";
+            echo "$arr[$j] </br>";
+        }
+        echo "</form>";
+    }
+    echo "</div>";
+    echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
+}
 function setBeautyTitle(){
     $DB = new SQLite3("db.sqlite");
     $part = (int)$_GET['part']+1;
@@ -111,23 +129,26 @@ function setBeautyTitle(){
     </div>
 EOT;
             echo '<script src="js/video-picker.js"></script>';
-    if((int)$_GET['part']==0){
-        createFor1stPart();
-        echo '<script src="js/send-answer.js"></script>';
-    }else if((int)$_GET['part']==1){
-        $DB = new SQLite3("db.sqlite");
-        $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
-        $Processor = new ContentProcessor();
-        $content = $result->fetchArray()[0];
-        $Processor->InputProcessor($content);
-        echo $content;
-        echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
-        echo '<script src="js/send-answer.js"></script>';
-        echo '</div>';
-    }
-    createButtonsList();
-    ?>
-</div>
-<script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
+            if((int)$_GET['part']==0){
+                createFor1stPart();
+                echo '<script src="js/send-answer.js"></script>';
+            }else if((int)$_GET['part']==1){
+                $DB = new SQLite3("db.sqlite");
+                $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
+                $Processor = new ContentProcessor();
+                $content = $result->fetchArray()[0];
+                $Processor->InputProcessor($content);
+                echo $content;
+                echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
+                echo '<script src="js/send-answer.js"></script>';
+                echo '</div>';
+            }else if((int)$_GET['part']==2){
+                createFor3rdPart();
+                echo '<script src="js/send-answer.js"></script>';
+            }
+            createButtonsList();
+            ?>
+        </div>
+        <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
 </body>
 </html>

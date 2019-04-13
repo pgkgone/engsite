@@ -21,6 +21,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 arr.push(answ);
             }
         }
+        if(part==2){
+            var name="radioInput";
+            for (var i = 0; i < 7; i++) {
+                var added = 0;
+                var elem = document.getElementsByName(name + i);
+                for(var j = 0; j < 3; j++)
+                {
+                    if(elem[j].checked)
+                    {
+                        arr.push(elem[j].value);
+                        added = 1;
+                    }
+                }
+                if(added == 0)
+                {
+                    arr.push("4");
+                }
+            }
+        }
+        console.log(arr);
         var ajaxurl = 'checkAnswers.php',
             data =  {'title': title,'part':part,'arr':arr};
         $.post(ajaxurl, data, function (response) {
