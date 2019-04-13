@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 arr.push(answ);
             }
         }
-
         var ajaxurl = 'checkAnswers.php',
             data =  {'title': title,'part':part,'arr':arr};
         $.post(ajaxurl, data, function (response) {
