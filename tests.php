@@ -81,7 +81,7 @@ function setBeautyTitle(){
     $title= (int)$_GET['title']+1;
     $partsRome = array("I", "II", "III", "IV", "V");
     $title=$DB->query("SELECT title FROM MENU WHERE id =".$title.";")->fetchArray()[0];
-    echo "<title class='main-text-only-one' id=".(int)$_GET['title'].">".$title.": Part — ".$partsRome[$part-1]."</title>";
+    echo "<title class='main-text-only-one' id=".(int)$_GET['title'].$_GET['part'].">".$title.": Part — ".$partsRome[$part-1]."</title>";
     echo "<h2 align='center' style='color: #1d2124' class='h1part' '>".$title.": Part - ".$partsRome[$part-1]."</h1>";
 }
 ?>
@@ -100,7 +100,7 @@ function setBeautyTitle(){
             echo '<a class="task-text">'.$task.'</a>';
             echo<<<EOT
             <div align="center">
-            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}'>
+            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}' style="margin-bottom: 1vh">
                 <p class='vjs-no-js'>
                     To view this video please enable JavaScript, and consider upgrading to a web browser that
                     <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
