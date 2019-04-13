@@ -60,7 +60,6 @@ EOT;
 }
 
 function createFor1stPart(){
-    echo '<div align="center"><div style="display: inline-block"><a>Choose Video: </a><select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select></div></div>';
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];
     $arr=explode("|",$result);
@@ -118,12 +117,20 @@ function setBeautyTitle(){
             echo '<a class="task-text">'.$task.'</a>';
             echo<<<EOT
             <div align="center">
-            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}' style="margin-bottom: 1vh">
+            <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}' style="margin-bottom: 0.5vh">
                 <p class='vjs-no-js'>
                     To view this video please enable JavaScript, and consider upgrading to a web browser that
                     <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
                 </p>
             </video>
+            <div style="display: inline-block">
+            <button class="picker" id="0">Video 1</button>
+            <button class="picker" id="1">Video 2</button>
+            <button class="picker" id="2">Video 3</button>
+            <button class="picker" id="3">Video 4</button>
+            <button class="picker" id="4">Video 5</button>
+            <button class="picker" id="5">Video 6</button>
+            </div>
             </div>
         </div>
     </div>
