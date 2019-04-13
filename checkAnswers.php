@@ -9,6 +9,14 @@ function getScore($title,$part,$arr){
             if($ansArr[$i]==$arr[$i]) $score++;
         }
     }
+    if($part==1){
+        $DB = new SQLite3("db.sqlite");
+        $result=(string)$DB->query("SELECT answers FROM tests WHERE title= ". $title." AND part = ".$part."")->fetchArray()[0];
+        $ansArr=explode(",",$result);
+        for($i=0;$i<7;$i++){
+            if($ansArr[$i]==$arr[$i]) $score++;
+        }
+    }
     return $score;
 }
 

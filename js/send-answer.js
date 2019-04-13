@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         var pater=document.getElementsByClassName('main-text-only-one')[0].id;
         var title =  parseInt(pater/10);
         var part =pater%10;
-
+        var maxi=[6,7,7]
         var arr = []
         if(part==0) {
             var name = "selectItem"
@@ -13,16 +13,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 arr.push(answ);
             }
         }
-
+        if(part==1){
+            var name="inputItem";
+            for (var i = 0; i < 7; i++) {
+                var elem = document.getElementById(name + i);
+                var answ = elem.value;
+                arr.push(answ);
+            }
+        }
         var ajaxurl = 'checkAnswers.php',
             data =  {'title': title,'part':part,'arr':arr};
         $.post(ajaxurl, data, function (response) {
             if(response==6){
-                swal("Good job!", "Your Score is 6/6!", "success");
+                swal("Good job!", "Your Score is "+response+"/"+maxi[part]+"!", "success");
             }else if(response==0){
-                swal("Oops!", "Your Score is 0/6!", "error");
+                swal("Oops!", "Your Score is "+response+"/"+maxi[part]+"!", "error");
             }else{
-                swal("Your Score: "+response+"/6!", "", "info");
+                swal("Your Score: "+response+"/"+maxi[part]+"!", "", "info");
             }
         });
         e.stopPropagation();

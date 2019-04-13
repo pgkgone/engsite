@@ -114,13 +114,15 @@ EOT;
     if((int)$_GET['part']==0){
         createFor1stPart();
         echo '<script src="js/send-answer.js"></script>';
-    }else {
+    }else if((int)$_GET['part']==1){
         $DB = new SQLite3("db.sqlite");
         $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
         $Processor = new ContentProcessor();
         $content = $result->fetchArray()[0];
         $Processor->InputProcessor($content);
         echo $content;
+        echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
+        echo '<script src="js/send-answer.js"></script>';
         echo '</div>';
     }
     createButtonsList();
