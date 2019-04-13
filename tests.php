@@ -62,7 +62,7 @@ EOT;
 function createFor1stPart(){
     echo '<div align="center"><div style="display: inline-block"><a>Choose Video: </a><select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select></div></div>';
     $DB = new SQLite3("db.sqlite");
-    $result=(string)$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "")->fetchArray()[0];
+    $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];
     $arr=explode("|",$result);
     for($i=0;$i<8;$i++){
         echo "<h4 style='margin-left: 5vh'>$arr[$i]</h4>";
@@ -110,9 +110,9 @@ function setBeautyTitle(){
         </div>
     </div>
 EOT;
+            echo '<script src="js/video-picker.js"></script>';
     if((int)$_GET['part']==0){
         createFor1stPart();
-        echo '<script src="js/video-picker.js"></script>';
         echo '<script src="js/send-answer.js"></script>';
     }else {
         $DB = new SQLite3("db.sqlite");
