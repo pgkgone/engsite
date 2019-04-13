@@ -110,9 +110,9 @@ function setBeautyTitle(){
         </div>
     </div>
 EOT;
+            echo '<script src="js/video-picker.js"></script>';
     if((int)$_GET['part']==0){
         createFor1stPart();
-        echo '<script src="js/video-picker.js"></script>';
         echo '<script src="js/send-answer.js"></script>';
     }else {
         $DB = new SQLite3("db.sqlite");
