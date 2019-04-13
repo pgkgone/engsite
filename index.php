@@ -11,8 +11,15 @@
             $(document).ready(function () {
                 $(".block").click(function () {
                     var idsel = this.id;
-                    console.log(idsel);
-                    $("#" + idsel + ".content").slideToggle("slow");
+                    //$("#" + idsel + ".content").slideToggle("slow"); $("#" + idsel + ".content").prop('scrollHeight')
+
+                    if($("#" + idsel + ".content").css("max-height") === "0px")
+                    {
+                        $("#" + idsel + ".content").css("max-height", "500px");
+                    }else{
+                        $("#" + idsel + ".content").css("max-height", "0px");
+                    }
+                    console.log($("#" + idsel + ".content").css("display"));
                 });
             });
     </script>
@@ -33,7 +40,7 @@ echo <<<EOT
                 $data[0]
             </h1>
         </div>
-        <div class="content" id="$title" align="center" style="display: none;">
+        <div class="content" id="$title" align="center" style="max-height: 0px;">
 EOT;
     for($part=0;$part<5;$part++){
 echo <<<EOT
