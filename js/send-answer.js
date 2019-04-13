@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var name="inputItem";
             for (var i = 0; i < 7; i++) {
                 var elem = document.getElementById(name + i);
-                var answ = elem.value.toString();
+                var answ = elem.value;
                 arr.push(answ);
             }
         }
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 }
             }
         }
-        console.log(arr);
         var ajaxurl = 'checkAnswers.php',
             data =  {'title': title,'part':part,'arr':arr};
         $.post(ajaxurl, data, function (response) {

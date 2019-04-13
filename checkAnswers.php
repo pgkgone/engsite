@@ -14,7 +14,15 @@ function getScore($title,$part,$arr){
         $result=(string)$DB->query("SELECT answers FROM tests WHERE title= ". $title." AND part = ".$part."")->fetchArray()[0];
         $ansArr=explode(",",$result);
         for($i=0;$i<7;$i++){
-            if($ansArr[$i]==$arr[$i]) $score++;
+            if(strtoupper($ansArr[$i])==strtoupper($arr[$i])) $score++;
+            if($title==3 && $part==1){
+                $v1="LASERS";
+                $v2="LIGHT";
+                $v3="PHOTONICS";
+                if($v1==strtoupper ($arr[$i])) $score++;
+                if($v2==strtoupper ($arr[$i])) $score++;
+                if($v3==strtoupper ($arr[$i])) $score++;
+            }
         }
     }
     if($part==2){

@@ -1,6 +1,6 @@
 <html>
 <head>
-    <div class="logo"> <img src="images/logo_small.png" height="100" width="100"></div>
+    <div class="logo"> <p><a href="https://sfedu.ru/"><img src="images/logo_small.png" height="100" width="100"></a></p></div>
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css" >
     <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
