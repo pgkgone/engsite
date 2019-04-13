@@ -61,7 +61,6 @@ EOT;
 
 function createFor1stPart(){
     echo '<div align="center"><div style="display: inline-block"><a>Choose Video: </a><select id="videoSelector"><option>Video 1</option><option>Video 2</option><option>Video 3</option><option>Video 4</option><option>Video 5</option><option>Video 6</option></select></div></div>';
-    $partsAlpha = array("A", "B", "C", "D", "E","F","G","H");
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ". $_GET["title"]." AND part = ".   $_GET["part"]. "")->fetchArray()[0];
     $arr=explode("|",$result);
@@ -69,8 +68,8 @@ function createFor1stPart(){
         echo "<h4 style='margin-left: 5vh'>$arr[$i]</h4>";
     }
     echo "<div style='display: inline-block; margin-left: 5vh'>";
-    for($i=0;$i<8;$i++){
-        echo '<a>'.$partsAlpha[$i].': </a><select id="'.selectItem.$i.'" style="margin-right: 2vh"><option value="">Choose...</option><option id="1">1</option><option id="2">2</option><option id="3">3</option><option id="4">4</option><option id="5">5</option><option id="6">6</option><option id="7">7</option><option id="8">8</option></select>';;
+    for($i=0;$i<6;$i++){
+        echo '<div style="display: inline-block"><a>Video '.($i+1).': </a><select id="'.selectItem.$i.'" style="margin-right: 2vh"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select></div>';;
     }
     echo "</div>";
     echo "<div><button style='margin-left: 5vh; margin-top: 1.2vh' id='checkButton'>Check</button><div>";
@@ -95,10 +94,11 @@ function setBeautyTitle(){
             ?>
         </div>
         <div class="task" style="margin-left: 4vh">
-            <a class="task-text"> You will watch six short video films about some great discoveries in physics made by outstanding scientists.
-                As you watch match the videos 1-6 with the appropriate headingsA-H in the text.
-                There are two extra headings which you do not need to use.
-            </a>
+            <?php
+            $DB = new SQLite3("db.sqlite");
+            $task=$DB->query("SELECT zadanie FROM tests WHERE title=".$_GET['title']." AND part=".$_GET['part']."")->fetchArray()[0];
+            echo '<a class="task-text">'.$task.'</a>';
+            echo<<<EOT
             <div align="center">
             <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' data-setup='{}'>
                 <p class='vjs-no-js'>
@@ -109,7 +109,7 @@ function setBeautyTitle(){
             </div>
         </div>
     </div>
-    <?php
+EOT;
     if((int)$_GET['part']==0){
         createFor1stPart();
         echo '<script src="js/video-picker.js"></script>';

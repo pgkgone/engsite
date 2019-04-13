@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementById('checkButton').onclick = function (e) {
-        var name='selectItem'
+        var name="selectItem"
         var arr=[]
-        for(var i=0;i<8;i++){
-            var answ = document.getElementById((name+i)).selectedIndex;
+        for(var i=0;i<6;i++){
+            var elem = document.getElementById(name+i);
+            var answ=elem.options[elem.selectedIndex].text;
             arr.push(answ);
         }
 

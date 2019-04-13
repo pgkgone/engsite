@@ -5,8 +5,8 @@ function getScore($title,$part,$arr){
         $DB = new SQLite3("db.sqlite");
         $result=(string)$DB->query("SELECT answers FROM tests WHERE title= ". $_POST["title"]." AND part = ".   $_POST["part"]. "")->fetchArray()[0];
         $ansArr=explode(",",$result);
-        for($i=0;$i<8;$i++){
-            if((int)$ansArr[$i]==$arr[$i]) $score++;
+        for($i=0;$i<6;$i++){
+            if($ansArr[$i]==$arr[$i]) $score++;
         }
     }
     return $score;
