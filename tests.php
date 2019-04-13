@@ -22,15 +22,15 @@ class ContentProcessor{
             $key = substr($content, $pos, $posend - $pos);
             $content = substr_replace($content, "", $pos, $posend - $pos);
             $InputKeys[$this->InputNumber] = $key;
-            $content = substr_replace($content, $this->PasteInputbox($InputKeys[$this->InputNumber--]), $pos, 0 );
+            $content = substr_replace($content, $this->PasteInputbox($this->InputNumber), $pos, 0 );
             $this->InputNumber++;
         }
     }
 
-    function PasteInputbox($placeholder){
+    function PasteInputbox($idtag){
         $inputbox =
             '
-            <input type="text" size="20" placeholder="'.$placeholder.'">
+            <input type="text" size="20" id="inputItem'.$idtag.'">
         ';
         return $inputbox;
     }
