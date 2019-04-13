@@ -123,14 +123,11 @@ function setBeautyTitle(){
                     <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
                 </p>
             </video>
-            <div style="display: inline-block">
-            <button class="picker" id="0">Video 1</button>
-            <button class="picker" id="1">Video 2</button>
-            <button class="picker" id="2">Video 3</button>
-            <button class="picker" id="3">Video 4</button>
-            <button class="picker" id="4">Video 5</button>
-            <button class="picker" id="5">Video 6</button>
-            </div>
+EOT;
+            if($_GET["part"]==0){
+                echo '<div style="display: inline-block"><button class="picker" id="0">Video 1</button><button class="picker" id="1">Video 2</button><button class="picker" id="2">Video 3</button><button class="picker" id="3">Video 4</button><button class="picker" id="4">Video 5</button><button class="picker" id="5">Video 6</button></div>';
+            }
+            echo <<<EOT
             </div>
         </div>
     </div>
