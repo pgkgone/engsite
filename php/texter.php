@@ -29,15 +29,13 @@ class ContentProcessor{
 function createFor1stPart(){
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];
-    $arr=explode("|",$result);
-    for($i=0;$i<8;$i++){
-        echo $arr[$i];
-    }
-    echo "<div style='display: inline-block; margin-left: 5vh'>";
+    echo $result;
+    echo "<div>";
     for($i=0;$i<6;$i++){
-        echo '<div style="display: inline-block"><a>Video '.($i+1).': </a><select id="'."selectItem".$i.'" style="margin-right: 2vh"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select></div>';;
+        echo '<div style="display: inline-block"><div><a id="options-a">Video '.($i+1).': </a></div><div class="select_mate" data-mate-select="active" ><select name="" onchange="" onclick="return false;" id=""><option value="" >Select...</option><option value="A">A</option><option value="B" >B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option> </select><p class="selecionado_opcion" onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/> <path d="M0-.75h24v24H0z" fill="none"/></svg></span><div class="cont_list_select_mate"> <ul class="cont_select_int"> </ul> </div> </div></div>';
     }
     echo "</div>";
+    echo '<script src="js/selector.js"></script>';
 }
 function createFor2ndPart(){
     $DB = new SQLite3("db.sqlite");

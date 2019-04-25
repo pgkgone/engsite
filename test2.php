@@ -1,7 +1,6 @@
 
 <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/styles2.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
