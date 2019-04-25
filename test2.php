@@ -20,17 +20,15 @@
             <?php include ("php/beautyTitle.php");?>
         </div>
         <div id="task-text">
-            <?php include ("php/tasker.php")?>
+            <?php include ("php/tasker.php");?>
         </div>
         <div id="video-main">
             <?php include ("php/video.php");?>
         </div>
-        <div id="text">
-
+        <div id="main-text-choosers">
+            <?php include ("php/texter.php");?>
         </div>
-        <div id="answer-input">
-
-        </div>
+        <?php include ("php/createButtons.php");?>
     </div>
 </div>
 </body>
