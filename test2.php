@@ -24,7 +24,7 @@
         <div id="video-main">
             <?php include ("php/video.php");?>
         </div>
-        <div id="main-text-choosers">
+        <div id="main-text-choosers" align="center">
             <?php include ("php/texter.php");?>
         </div>
         <?php include ("php/createButtons.php");?>

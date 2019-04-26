@@ -36,6 +36,7 @@ function createFor1stPart(){
     }
     echo "</div>";
     echo '<script src="js/selector.js"></script>';
+    echo '<script src="js/scroll.js"></script>';
 }
 function createFor2ndPart(){
     $DB = new SQLite3("db.sqlite");
