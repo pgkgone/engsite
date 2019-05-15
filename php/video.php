@@ -4,6 +4,9 @@ echo<<<EOT
     <video controls crossorigin playsinline width="500px" id="plyr" style="min-height: 290px;">
         <source src="" type="video/mp4">
     </video>
+EOT;
+if($_GET["part"]==0) {
+    echo <<<EOT
     <div class="button_list">
         <button class="btn act" id="1">1</button>
         <button class="btn" id="2">2</button>
@@ -14,4 +17,5 @@ echo<<<EOT
     </div>
 </div>
 EOT;
+}
 ?>

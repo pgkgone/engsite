@@ -12,7 +12,8 @@ body{
 
 .topblock{
     display: flex;
-    padding-top: 0.5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     width: 100%;
     justify-content: center;
 }
@@ -189,7 +190,7 @@ div[id^="inputDiv"] input{
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
-.unselected{
+.unselected a{
     color: #625A5A !important;
 }
 .menu-buttons{

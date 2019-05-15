@@ -29,7 +29,7 @@
         <div class="centerblock">
             <div class="grid-wrapper-right-two-thirds">
                 <?php include ("php/menu.php")?>
-                <div>
+                <div style="position: relative;width: 80%;margin-left: 5%;">
             <?php include ("php/beautyTitle.php")?>
             <div class="post">
                 <h2 class="title"><?php include ("php/tasker.php")?></h2>
