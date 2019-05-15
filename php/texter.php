@@ -69,6 +69,7 @@ function createFor3rdPart(){
         echo "</form>";
     }
     echo "</div>";
+    echo "</div>";
 }
 
 $part=(int)$_GET['part'];
