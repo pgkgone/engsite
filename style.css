@@ -53,7 +53,7 @@ body{
     position: relative;
 	width: 70%;
     margin-left: 15%;
-	background-color: BA367F;
+	background-color: #BA367F;
 }
 .centerblock {
     width: 96%;
@@ -179,7 +179,9 @@ body{
 	margin-top: 0.5%;
     margin-left: 10%;
 }
-
+a{
+    text-decoration: none;
+}
 /* universe animation
 */
 @media screen and (max-width: 1300px) {

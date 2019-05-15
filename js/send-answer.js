@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         if(part==1){
             var name="inputItem";
-            for (var i = 0; i < 7; i++) {
+            for (var i = 1; i < 7; i++) {
                 var elem = document.getElementById(name + i);
                 var answ = elem.value;
                 arr.push(answ);
