@@ -27,18 +27,22 @@ class ContentProcessor{
 }
 
 function createFor1stPart(){
+    echo "<div align='center'>";
+    for($i=0;$i<6;$i++){
+        echo '<div style="display: inline-block"><a>Video '.($i+1).': </a><select id="'."selectItem".$i.'" style="margin-right: 2vh;border-radius: 7px;"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select></div>';;
+    }
+    echo "</div>";
     $DB = new SQLite3("db.sqlite");
+    echo "<div>";
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];
     echo $result;
-    echo "<div>";
-    for($i=0;$i<6;$i++){
-        echo '<div style="display: inline-block"><div><a id="options-a">Video '.($i+1).': </a></div><div class="select_mate" data-mate-select="active" ><select name="" onchange="" onclick="return false;" id=""><option value="" >Select...</option><option value="A">A</option><option value="B" >B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option> </select><p class="selecionado_opcion" onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/> <path d="M0-.75h24v24H0z" fill="none"/></svg></span><div class="cont_list_select_mate"> <ul class="cont_select_int"> </ul> </div> </div></div>';
-    }
     echo "</div>";
     echo '<script src="js/selector.js"></script>';
     echo '<script src="js/scroll.js"></script>';
+    echo '<script src="js/video-picker.js"></script>';
 }
 function createFor2ndPart(){
+    echo '<div id="inputDiv"';
     $DB = new SQLite3("db.sqlite");
     $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
     $Processor = new ContentProcessor();
@@ -46,9 +50,10 @@ function createFor2ndPart(){
     $Processor->InputProcessor($content);
     echo $content;
     echo '</div>';
+    echo '</div>';
 }
 function createFor3rdPart(){
-    echo '<div align="center"></div>';
+    echo '<div class="text">';
     $DB = new SQLite3("db.sqlite");
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];
     $question=explode("||",$result); // || - разделение для вопросов | - разделение для ответов
@@ -76,7 +81,7 @@ else if($part==1){
     createFor3rdPart();
 }
 if(($part>=0) && ($part<=2)){
-    echo "<div><button id='checkButton'>Check</button><div>";
+    echo "<div align='center'><button id='checkButton' class='btn-primary'>Check</button><div>";
     echo '<script src="js/send-answer.js"></script>';
 }
 ?>

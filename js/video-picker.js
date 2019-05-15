@@ -1,22 +1,19 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-var myVideo = videojs('my-video');
-var dropdown = document.getElementById('videoSelector');
 var paterV=document.getElementsByClassName('main-text-only-one')[0].id;
 var titleV =  parseInt(paterV/10);
 var partV =paterV%10;
+document.addEventListener("DOMContentLoaded", function(event) {
+    var elements = document.getElementsByClassName("btn");
+    var vid = document.getElementById("plyr");
+    vid.src="video/"+titleV+"/part_"+(partV+1)+"/1.mp4";
 
-myVideo.src([{src:"video/"+titleV+"/part_"+(partV+1)+"/1.mp4", type: "video/mp4"},]);
-
-if(partV==0){
-    var buttonss=document.getElementsByClassName('picker');
-        for (i = 0; i < buttonss.length; i++) {
-            buttonss[i].addEventListener("click", function() {
-                myVideo.src([{
-                    src: "video/" + titleV + "/part_" + (partV + 1) + "/" + (parseInt(this.id)+1) + ".mp4",
-                    type: "video/mp4"
-                },]);
-            });
-        }
-}
-
+    for(var i=0; i < 6; i++)
+    {
+        elements[i].addEventListener('click', function () {
+            var vid = document.getElementById("plyr");
+            vid.src="video/" + titleV + "/part_" + (partV + 1) + "/" + (parseInt(this.id)+1) + ".mp4";
+            var act = document.getElementsByClassName("act");
+            act[0].classList = "btn";
+            this.classList="btn act";
+        }, false);
+    }
 });
