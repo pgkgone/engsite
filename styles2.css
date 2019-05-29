@@ -133,9 +133,11 @@ li {
 }
 
 #units {
+    width: 100%;
     background: rgba(128, 0, 84, 0.15);
-    max-height: 65vh;
     margin-left: 2.5vh;
+    position: relative;
+    height: fit-content;
 }
 div[id^="units"] ol {
     list-style: none;
