@@ -113,7 +113,6 @@ li {
 }
 
 .task {
-    text-align: center;
     margin: 0 auto;
     margin-top: 2vh;
     margin-bottom: 4vh;
@@ -201,6 +200,11 @@ div[id^="inputDiv"] input{
 .menu-button{
     margin-left: 0.81vh;
     margin-bottom: 0.81vh;
+}
+
+.blueAboutText{
+    color: #005cbf;
+
 }
 .post{
     position: relative;
