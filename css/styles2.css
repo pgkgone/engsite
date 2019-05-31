@@ -209,7 +209,7 @@ div[id^="inputDiv"] input{
     color: #005cbf;
 }
 .pdf_link_a{
-    padding: 20px 20px 20px 20px;
+    padding: 22px 20px 22px 20px;
     position: fixed;
     right: 5%;
     bottom: 3%;
@@ -217,7 +217,7 @@ div[id^="inputDiv"] input{
     background-color: #711840;
     border-radius: 1000px;
     font-size: 20px;
-    font-family: fantasy;
+    font-family: Roboto Black;
     color: white;
     text-decoration: none;
     color: white;
