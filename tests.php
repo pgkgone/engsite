@@ -12,11 +12,11 @@
     <div class="animationblock">
         <div class="topblock">
             <div class="logo">
-                <img src="logo.png" width="200vw">
+                <img src="logo.png" width="75vw" height="75vw">
             </div>
             <div class="menu">
                 <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="/about.php">About</a>
                 <a href="#">Content</a>
                 <a href="#navanchor">Nav</a>
             </div>

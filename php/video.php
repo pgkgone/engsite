@@ -15,7 +15,7 @@ if($_GET["part"]==0) {
 		<button class="btn" id="5">5</button>
 		<button class="btn" id="6">6</button>
     </div>
-</div>
 EOT;
 }
+echo "</div>";
 ?>
