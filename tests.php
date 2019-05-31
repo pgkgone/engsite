@@ -8,19 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 </head>
 <body>
-<div class="pdf_link" style="
-    padding: 20px 20px 20px 20px;
-    position: fixed;
-    align-self: left;
-    right: 5%;
-    bottom: 3%;
-    z-index: 1000;
-    background-color: cadetblue;
-    border-radius: 1000px;
-    font-size: 20px;
-    font-family: fantasy;
-    color: white;
-">
+<div class="pdf_link" >
     <?php include ("php/pdf_link.php")?>
 </div>
 <div class="mainblock">

@@ -208,3 +208,22 @@ div[id^="inputDiv"] input{
 .blueAboutText{
     color: #005cbf;
 }
+.pdf_link_a{
+    padding: 20px 20px 20px 20px;
+    position: fixed;
+    right: 5%;
+    bottom: 3%;
+    z-index: 1000;
+    background-color: #711840;
+    border-radius: 1000px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: white;
+    text-decoration: none;
+    color: white;
+}
+.pdf_link_a:hover{
+    background-color: #711840;
+    color: white;
+    text-decoration: none;
+}
