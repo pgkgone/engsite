@@ -5,15 +5,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var elements = document.getElementsByClassName("btn");
     var vid = document.getElementById("plyr");
     vid.src="video/"+titleV+"/part_"+(partV+1)+"/1.mp4";
-
-    for(var i=0; i < 6; i++)
-    {
-        elements[i].addEventListener('click', function () {
-            var vid = document.getElementById("plyr");
-            vid.src="video/" + titleV + "/part_" + (partV + 1) + "/" + (parseInt(this.id)+1) + ".mp4";
-            var act = document.getElementsByClassName("act");
-            act[0].classList = "btn";
-            this.classList="btn act";
-        }, false);
+    if(partV==0) {
+        for (var i = 0; i < 6; i++) {
+            elements[i].addEventListener('click', function () {
+                var vid = document.getElementById("plyr");
+                vid.src = "video/" + titleV + "/part_" + (partV + 1) + "/" + (parseInt(this.id) + 1) + ".mp4";
+                var act = document.getElementsByClassName("act");
+                act[0].classList = "btn";
+                this.classList = "btn act";
+            }, false);
+        }
     }
 });

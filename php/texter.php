@@ -39,7 +39,6 @@ function createFor1stPart(){
     echo "</div>";
     echo '<script src="js/selector.js"></script>';
     echo '<script src="js/scroll.js"></script>';
-    echo '<script src="js/video-picker.js"></script>';
 }
 function createFor2ndPart(){
     echo '<div id="inputDiv"';
@@ -69,6 +68,7 @@ function createFor3rdPart(){
         echo "</form>";
     }
     echo "</div>";
+    echo "</div>";
 }
 
 $part=(int)$_GET['part'];
@@ -84,4 +84,5 @@ if(($part>=0) && ($part<=2)){
     echo "<div align='center'><button id='checkButton' class='btn-primary'>Check</button><div>";
     echo '<script src="js/send-answer.js"></script>';
 }
+echo '<script src="js/video-picker.js"></script>';
 ?>

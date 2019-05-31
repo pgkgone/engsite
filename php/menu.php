@@ -10,7 +10,7 @@ for($i=0;$i<5;$i++){
         echo '<li id="unit'.$i.'" class="selected"><a href="tests.php?title='.$i.'&part=0">'.$parts[$i].'</a>';
         echo '<div class="taskList">';
     }else{
-        echo '<li id="unit'.$i.'" <a href="tests.php?title='.$i.'&part=0">'.$parts[$i].'</a>';
+        echo '<li id="unit'.$i.'"><a href="tests.php?title='.$i.'&part=0">'.$parts[$i].'</a>';
         echo '<div class="taskList" style="display: none;">';
     }
 
