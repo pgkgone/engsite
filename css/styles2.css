@@ -67,7 +67,7 @@ body{
     background: #fff;
     color: #000;
     margin: 0 auto;
-    width: 950px;
+    width: 100%;
     height: 220px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -133,9 +133,11 @@ li {
 }
 
 #units {
+    width: 100%;
     background: rgba(128, 0, 84, 0.15);
-    max-height: 65vh;
     margin-left: 2.5vh;
+    position: relative;
+    height: fit-content;
 }
 div[id^="units"] ol {
     list-style: none;
@@ -203,4 +205,7 @@ div[id^="inputDiv"] input{
 .blueAboutText{
     color: #005cbf;
 
+}
+.post{
+    position: relative;
 }
