@@ -10,15 +10,23 @@ function getScore($title,$part,$arr){
         }
     }
     if($part==1){
+        $errors = array();
         $DB = new SQLite3("db.sqlite");
         $result=(string)$DB->query("SELECT answers FROM tests WHERE title= ". $title." AND part = ".$part."")->fetchArray()[0];
         $ansArr=explode(",",$result);
         for($i=0;$i<7;$i++){
+            $isChanged=0;
             $ansArrN=explode("|",$ansArr[$i]);
             for($j=0;$j<count($ansArrN);$j++) {
-                if (strtoupper($ansArrN[$j]) == strtoupper($arr[$i])) $score++;
+                if (strtoupper($ansArrN[$j]) == strtoupper($arr[$i])) {
+                    $score++;
+                    $isChanged=1;
+                }
             }
+            array_push($errors, $isChanged);
         }
+        array_push($errors, $score);
+        return json_encode($errors);
     }
     if($part==2){
         $DB = new SQLite3("db.sqlite");
