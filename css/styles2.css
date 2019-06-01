@@ -15,15 +15,17 @@ body{
     padding-top: 1vh;
     padding-bottom: 1vh;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
 }
 .logo{
     display: inline-block;
+    margin-left: 1.5VW;
 }
 .menu{
     display: inline-block;
     margin-left: 30px;
     margin-top: 40px;
+    margin-left: 34.5VW;
 }
 .menu a{
     font-family: "Roboto Black";
@@ -226,9 +228,4 @@ div[id^="inputDiv"] input{
     background-color: #711840;
     color: white;
     text-decoration: none;
-}
-
-div[id^="inputDiv"] .err_field{
-    border-width: 2px;
-    border-color: red;
 }
