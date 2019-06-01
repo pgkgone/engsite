@@ -20,15 +20,18 @@ body{
     display: flex;
     padding-top: 5vh;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
 }
 .logo{
     display: inline-block;
+
+    margin-left: 1.5VW;
 }
 .menu{
     display: inline-block;
     margin-left: 30px;
     margin-top: 40px;
+    margin-left: 31VW;
 }
 .menu a{
     font-family: "Roboto Black";
@@ -51,8 +54,8 @@ body{
 }
 .content {
     position: relative;
-	width: 70%;
-    margin-left: 15%;
+	width: 90%;
+    margin-left: 5%;
 	background-color: #BA367F;
 }
 .centerblock {
@@ -65,7 +68,7 @@ body{
 .centerblock .navtitle{
     font-family: "Roboto Black";
     font-size: 60px;
-    margin-left: 10%;
+    margin-left: 25%;
     text-decoration: underline;
 }
 .centerblock .themenumber1{
@@ -151,7 +154,7 @@ body{
 .centerblock ul {
 	list-style-type: none;
 	width: 60%;
-	margin-left: 10%;
+	margin-left: 16%;
 	font-family: "Roboto Black";
 	font-size: 50px;
 	padding-inline-start: 0px;
@@ -168,7 +171,7 @@ body{
     padding-bottom: 1.5%;
 }
 .centerblock .themetitle{
-	padding-left: 3%;
+	padding-left: 24%;
 }
 .centerblock .parttitle  {
     margin-left: 3%;
