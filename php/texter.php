@@ -42,7 +42,7 @@ function createFor1stPart(){
 }
 function createFor2ndPart(){
     echo "<div class='text'>";
-    echo '<div id="inputDiv"';
+    echo '<div id="inputDiv">';
     $DB = new SQLite3("db.sqlite");
     $result = $DB->query("SELECT content FROM tests WHERE title = " . $_GET["title"] . " AND part = " . $_GET["part"] . "");
     $Processor = new ContentProcessor();

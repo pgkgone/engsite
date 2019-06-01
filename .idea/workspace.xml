@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f72df31a-7f48-48c9-a1ad-e5dc1d130ae5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/pdf_link.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/pdf_link.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/tasker.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/tasker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/texter.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/texter.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,17 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/tasker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="102">
+              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="209" column="1" lean-forward="true" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
+            <state relative-caret-position="3553">
+              <caret line="209" column="1" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -76,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/php/pdf_link.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <caret line="5" column="115" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -84,10 +86,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="29">
               <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/texter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -200,14 +213,14 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/checkAnswers.php" />
-        <option value="$PROJECT_DIR$/php/texter.php" />
         <option value="$PROJECT_DIR$/php/video.php" />
         <option value="$PROJECT_DIR$/php/menu.php" />
-        <option value="$PROJECT_DIR$/php/tasker.php" />
         <option value="$PROJECT_DIR$/php/pdfviewer.php" />
-        <option value="$PROJECT_DIR$/php/pdf_link.php" />
         <option value="$PROJECT_DIR$/tests.php" />
         <option value="$PROJECT_DIR$/css/styles2.css" />
+        <option value="$PROJECT_DIR$/php/pdf_link.php" />
+        <option value="$PROJECT_DIR$/php/tasker.php" />
+        <option value="$PROJECT_DIR$/php/texter.php" />
       </list>
     </option>
   </component>
@@ -318,13 +331,7 @@
       <workItem from="1557946106786" duration="3711000" />
       <workItem from="1559306408016" duration="996000" />
       <workItem from="1559312198843" duration="8991000" />
-    </task>
-    <task id="LOCAL-00004" summary="1">
-      <created>1554583163926</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1554583163926</updated>
+      <workItem from="1559383784202" duration="1419000" />
     </task>
     <task id="LOCAL-00005" summary="?">
       <created>1554583328862</created>
@@ -662,17 +669,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559334972337</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="another css edit">
+      <created>1559335183259</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1559335183259</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134632000" />
+    <option name="totallyTimeSpent" value="136927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32334962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32762837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -714,7 +728,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="print tests from db" />
     <MESSAGE value="little bit of formatting" />
     <MESSAGE value="Теперь кнопки Prev и Next создаются только лишь тогда, когда они могут перейти на существующую страницу. Неправильно работает href" />
     <MESSAGE value="Для 1 части создан обработчик" />
@@ -739,7 +752,8 @@
     <MESSAGE value="небольшие улучшения" />
     <MESSAGE value="Merge branch 'master' of https://github.com/pgkgone/engsite&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.local.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;db.sqlite" />
     <MESSAGE value="css pdf button edited" />
-    <option name="LAST_COMMIT_MESSAGE" value="css pdf button edited" />
+    <MESSAGE value="another css edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="another css edit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
@@ -860,18 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/texter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/downloads/styles2 (6).css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1938" />
@@ -884,24 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="184" column="6" selection-start-line="184" selection-start-column="6" selection-end-line="184" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/downloads/styles2 (5).css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="140" column="24" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -912,34 +900,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/tasker.php">
+    <entry file="file://$PROJECT_DIR$/php/video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="204">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.php">
+    <entry file="file://$PROJECT_DIR$/css/styles2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="3553">
+          <caret line="209" column="1" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="184" column="6" selection-start-line="184" selection-start-column="6" selection-end-line="184" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/pdf_link.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <caret line="5" column="115" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles2.css">
+    <entry file="file://$PROJECT_DIR$/php/tasker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="209" column="1" lean-forward="true" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/texter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
