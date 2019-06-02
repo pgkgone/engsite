@@ -49,14 +49,14 @@ body{
 .content {
     position: relative;
     background-color: #711840;
-    min-height: 65vh;
+    min-height: 100%;
 }
 .centerblock {
     width: 96%;
     margin-left: 2%;
     background-color: white;
     padding-bottom: 5%;
-    min-height: 65vh;
+    min-height: 100%;
 }
 .centerblock .navtitle{
     font-family: "Roboto Black";
@@ -239,7 +239,7 @@ div[id^="inputDiv"] .err_field{
     margin-left: 2%;
     background-color: white;
     padding-bottom: 5%;
-    min-height: 65vh;
+    min-height: 100%;
     padding-left: 10%;
     padding-right: 10%;
 }
