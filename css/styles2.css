@@ -229,3 +229,8 @@ div[id^="inputDiv"] input{
     color: white;
     text-decoration: none;
 }
+
+div[id^="inputDiv"] .err_field{
+    border-width: 2px;
+    border-color: red;
+}

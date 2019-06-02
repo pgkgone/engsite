@@ -28,10 +28,19 @@ class ContentProcessor{
 
 function createFor1stPart(){
     echo "<div align='center'>";
+    echo "<table>";
+    echo "<tr>";
     for($i=0;$i<6;$i++){
-        echo '<div style="display: inline-block"><a>Video '.($i+1).': </a><select id="'."selectItem".$i.'" style="margin-right: 2vh;border-radius: 7px;"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select></div>';;
+        echo '<th>Video '.($i+1).':</th>';
     }
+    echo "</tr><tr>";
+    for($i=0;$i<6;$i++){
+        echo '<td><select id="'."selectItem".$i.'" style="margin-right: 2vh;border-radius: 7px;"><option value="">Choose...</option><option id="A">A</option><option id="B">B</option><option id="C">C</option><option id="D">D</option><option id="E">E</option><option id="F">F</option><option id="G">G</option><option id="H">H</option></select></td>';
+    }
+    echo "</tr>";
+    echo "</table>";
     echo "</div>";
+
     $DB = new SQLite3("db.sqlite");
     echo "<div>";
     $result=(string)$DB->query("SELECT content FROM tests WHERE title = ".$_GET["title"]." AND part = ".$_GET["part"]. "")->fetchArray()[0];

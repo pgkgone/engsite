@@ -23,9 +23,7 @@ function getScore($title,$part,$arr){
                     $isChanged=1;
                 }
             }
-            if($isChanged==0){
-                array_push($errors, $i);
-            }
+            array_push($errors, $isChanged);
         }
         array_push($errors, $score);
         return json_encode($errors);
