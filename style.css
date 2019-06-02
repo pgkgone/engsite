@@ -3,13 +3,13 @@ html{
 }
 body{
     margin: 0px;
-	background-color: D8569C;
+	background-color: #711840;
 }
 .mainblock{
     background: linear-gradient(to left, #3d4d89 0%,#4d67ac 30%,#4d67ac 70%,#3d4d89 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
     width: 100%;
     height: 80%;
-	min-height: 100vh;
+	min-height: 110vh;
 }
 .animationblock{
     width: 100%;
@@ -54,20 +54,20 @@ body{
 }
 .content {
     position: relative;
-	width: 90%;
-    margin-left: 5%;
-	background-color: #BA367F;
+    width: 100%;
+    background-color: #711840;
 }
 .centerblock {
-    width: 96%;
+    width: 86%;
     margin-left: 2%;
     background-color: white;
-    padding-top: 13vh;
-	padding-bottom: 5%;
+    padding-top: 10px;
+    padding-bottom: 5%;
+	padding-left: 10%;
 }
 .centerblock .navtitle{
     font-family: "Roboto Black";
-    font-size: 60px;
+    font-size: 30px;
     margin-left: 5%;
     text-decoration: underline;
 }
@@ -156,15 +156,15 @@ body{
 	width: 80%;
 	margin-left: 5%;
 	font-family: "Roboto Black";
-	font-size: 50px;
 	padding-inline-start: 0px;
 
 }
 .centerblock li {
 	list-style-type: none;
 	font-family: "Roboto Black";
-	font-size: 30px;
+	font-size: 20px;
 	background-color: EAEAEA;
+	line-height: 30px;
 }
 .centerblock .parttitle a {
 	text-decoration: underline;
@@ -205,4 +205,23 @@ a{
 .atom{
 	width: 90vw;
 	margin-top: -2%;
+}
+.header {
+	margin: 0 0 0 0;
+    color: white;
+}
+#unit1{
+	cursor: pointer;
+}
+#unit2{
+	cursor: pointer;
+}
+#unit3{
+	cursor: pointer;
+}
+#unit4{
+	cursor: pointer;
+}
+#unit5{
+	cursor: pointer;
 }
