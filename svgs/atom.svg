@@ -1,5 +1,6 @@
-<center>
-<svg class="atom" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#990D0D;}
@@ -729,7 +730,7 @@
 	
 		<ellipse transform="matrix(0.9521 -0.3057 0.3057 0.9521 -107.95 399.8046)" class="st11" cx="1222.62" cy="544.59" rx="3.91" ry="2.94"/>
 </g>
-<g id="unit1">
+<g id="_x31_th">
 	<g>
 		<g>
 			<path class="st14" d="M1018.24,124.37c2.64,8.85,4.06,18.26,4.06,28.02c0,47.4-33.54,86.61-77.2,93.19
@@ -742,7 +743,7 @@
 	</g>
 	<text transform="matrix(1 0 0 1 942.3525 197.8716)" class="st16 st17 st18">I</text>
 </g>
-<g id="unit2">
+<g id="_x32_th">
 	<g>
 		<g>
 			<path class="st19" d="M688.2,334.41c2.64,8.85,4.06,18.26,4.06,28.02c0,47.4-33.54,86.61-77.2,93.19
@@ -755,7 +756,7 @@
 	</g>
 	<text transform="matrix(1 0 0 1 592.8374 412.2368)" class="st16 st17 st18">II</text>
 </g>
-<g id="unit3">
+<g id="_x33_th">
 	<g>
 		<g>
 			<path class="st21" d="M801.14,745.7c2.64,8.85,4.06,18.26,4.06,28.02c0,47.4-33.54,86.61-77.2,93.19
@@ -768,7 +769,7 @@
 	</g>
 	<text transform="matrix(1 0 0 1 693.1509 823.5234)" class="st16 st17 st18">III</text>
 </g>
-<g id="unit4">
+<g id="_x34_th">
 	<g>
 		<g>
 			<path class="st23" d="M1250.93,739.79c2.64,8.85,4.06,18.26,4.06,28.02c0,47.4-33.54,86.61-77.2,93.19
@@ -781,7 +782,7 @@
 	</g>
 	<text transform="matrix(1 0 0 1 1144.0293 818.7031)" class="st16 st17 st18">IV</text>
 </g>
-<g id="unit5">
+<g id="_x35_th">
 	<g>
 		<g>
 			<path class="st25" d="M1352.64,339.59c2.64,8.85,4.06,18.26,4.06,28.02c0,47.4-33.54,86.61-77.2,93.19
@@ -851,4 +852,3 @@
 		<ellipse transform="matrix(0.9521 -0.3057 0.3057 0.9521 -57.5622 355.5854)" class="st11" cx="1106.62" cy="361.59" rx="3.91" ry="2.94"/>
 </g>
 </svg>
-</center>
