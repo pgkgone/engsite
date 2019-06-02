@@ -18,7 +18,7 @@
                 <a href="index.html">Home</a>
                 <a href="about.php">About</a>
                 <a href="#">Content</a>
-                <a href="#navanchor">Nav</a>
+                <a href="index.html#navanchor">Nav</a>
             </div>
         </div>
     </div>
