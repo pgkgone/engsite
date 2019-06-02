@@ -234,3 +234,12 @@ div[id^="inputDiv"] .err_field{
     border-width: 2px;
     border-color: red;
 }
+.centerblock_about{
+    width: 96%;
+    margin-left: 2%;
+    background-color: white;
+    padding-bottom: 5%;
+    min-height: 65vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}

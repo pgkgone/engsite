@@ -24,7 +24,7 @@
     </div>
 </div>
 <div class="content">
-    <div class="centerblock">
+    <div class="centerblock_about">
         <p style="font-size: 2.7vh;padding-top: 2vh" align="center">Мультимедийный электронный учебный курс</p>
         <p style="color: #dc3545; font-size: 2.9vh" align="center"><strong>&ldquo;Video-based Listening Comprehension Tasks for Undergraduate and Graduate Students in Sciences</strong><strong>&rdquo;</strong></>
         <p class="blueAboutText">Целевой пользователь – Target user</p>
