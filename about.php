@@ -12,7 +12,7 @@
     <div class="animationblock">
         <div class="topblock">
             <div class="logo">
-                <img src="logo.png" width="200vw">
+                <a href="http://sfedu.ru" ><img src="logo.png" width="75vw" height="75vw"></a>
             </div>
             <div class="menu">
                 <a href="index.html">Home</a>
