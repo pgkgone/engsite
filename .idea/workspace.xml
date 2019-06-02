@@ -67,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
+            <state relative-caret-position="3213">
               <caret line="191" column="6" selection-start-line="191" selection-start-column="6" selection-end-line="191" selection-end-column="6" />
             </state>
           </provider>
@@ -345,20 +345,6 @@
       <workItem from="1559398423257" duration="102000" />
       <workItem from="1559406717585" duration="2318000" />
       <workItem from="1559461625711" duration="5297000" />
-    </task>
-    <task id="LOCAL-00012" summary="print tests from db">
-      <created>1554587630202</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1554587630202</updated>
-    </task>
-    <task id="LOCAL-00013" summary="little bit of formatting">
-      <created>1554659260534</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1554659260534</updated>
     </task>
     <task id="LOCAL-00014" summary="Теперь кнопки Prev и Next создаются только лишь тогда, когда они могут перейти на существующую страницу. Неправильно работает href">
       <created>1554989892036</created>
@@ -689,11 +675,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559482909967</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="atom">
+      <created>1559490561605</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1559490561605</updated>
+    </task>
+    <task id="LOCAL-00062" summary="atom">
+      <created>1559490685665</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1559490685665</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150461000" />
+    <option name="totallyTimeSpent" value="151201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -886,7 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
+        <state relative-caret-position="3213">
           <caret line="191" column="6" selection-start-line="191" selection-start-column="6" selection-end-line="191" selection-end-column="6" />
         </state>
       </provider>
