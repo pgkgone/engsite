@@ -183,7 +183,7 @@ div[id^="inputDiv"] input{
     color: #625A5A !important;
 }
 .menu-buttons{
-    margin-top: 5.5vh;
+    margin-top: 4.5vh;
 }
 .menu-button{
     margin-left: 0.81vh;
@@ -251,4 +251,9 @@ nav {
 checkerZ{
     margin-left: 20px;
     margin-right: 10px;
+}
+
+.chckBTN{
+    margin-top: 15px;
+
 }

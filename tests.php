@@ -34,8 +34,6 @@
                 <?php include ("php/video.php")?>
                 <?php include ("php/texter.php")?>
                 <?php include ("php/createButtons.php")?>
-
-
             </div>
         </div>
     </div>
