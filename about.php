@@ -1,32 +1,25 @@
 <html>
 <head>
-    <link rel="stylesheet" href="css/styles2.css" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="css/styles3.css" >
 </head>
 <body>
-<div class="mainblock">
-    <div class="animationblock">
-        <div class="topblock">
-            <div class="logo">
-                <a href="http://sfedu.ru" ><img src="logo.png" width="75vw" height="75vw"></a>
-            </div>
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.php">About</a>
-                <a href="#">Content</a>
-                <a href="index.html#navanchor">Nav</a>
-            </div>
-        </div>
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="logo.png" width="65vw" height="65vw"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.php">About</a></li>
+        </ul>
     </div>
-</div>
+</nav>
+
 <div class="content">
-    <div class="centerblock_about">
-        <p style="font-size: 2.7vh;padding-top: 2vh" align="center">Мультимедийный электронный учебный курс</p>
-        <p style="color: #dc3545; font-size: 2.9vh" align="center"><strong>&ldquo;Video-based Listening Comprehension Tasks for Undergraduate and Graduate Students in Sciences</strong><strong>&rdquo;</strong></>
+    <div class="container">
+        <p style="font-size: 3vh;padding-top: 2vh" align="center">Мультимедийный электронный учебный курс</p>
+        <p style="color: #dc3545; font-size: 3vh" align="center"><strong>&ldquo;Video-based Listening Comprehension Tasks for Undergraduate and Graduate Students in Sciences</strong><strong>&rdquo;</strong></>
         <p class="blueAboutText">Целевой пользователь – Target user</p>
         <p>Студенты  1-4 курсов бакалавриата и частично  1-2 го года магистратуры физических и других естественнонаучных специальностей университетов.</p>
         <p class=blueAboutText">Цели – objectives</p>
@@ -45,5 +38,25 @@
         </table>
     </div>
 </div>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text"></h5>
+                <p class="grey-text text-lighten-4">????.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://vk.com/null.pointer.exception">Sergei Chamkin</a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://vk.com/vanyamakarov">Ivan Makarov</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">2019 All rights reserved</div>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 echo<<<EOT
 <div class="container" align="center">
-    <video controls crossorigin playsinline width="500px" id="plyr" style="min-height: 290px;">
+    <video controls crossorigin playsinline width="555px" height="416.250" id="plyr" style="min-height: 290px;">
         <source src="" type="video/mp4">
     </video>
 EOT;
@@ -15,7 +15,9 @@ if($_GET["part"]==0) {
 		<button class="btn" id="5">5</button>
 		<button class="btn" id="6">6</button>
     </div>
+
 EOT;
 }
 echo "</div>";
+echo "<div class=\"divider\"></div>";
 ?>

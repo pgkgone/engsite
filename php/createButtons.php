@@ -9,11 +9,11 @@ EOT;
 $part = (int)$_GET['part'];
 $title= (int)$_GET['title'];
 if($part>0){
-    echo '<input type="button" class="prev-button btn-primary" value="Prev part" onclick="location.href = '.returnHref($title,$part-1).'">';
+    echo '<input type="button" class="waves-effect waves-light btn" value="Prev part" onclick="location.href = '.returnHref($title,$part-1).'">';
 }
-echo '<input type="button" class="main-menu-button btn-primary" value="Main menu" onclick="location.href = \'index.html\'" />';
+echo '<input type="button" class="waves-effect waves-light btn" value="Main menu" onclick="location.href = \'index.html\'" style="margin-left:6px;margin-right: 6px" />';
     if($part<4){
-        echo '<input type="button" class="next-button btn-primary" value="Next part" onclick="location.href = '.returnHref($title,$part+1).'">';
+        echo '<input type="button" class="waves-effect waves-light btn" value="Next part" onclick="location.href = '.returnHref($title,$part+1).'">';
     }
     echo <<<EOT
 </div>

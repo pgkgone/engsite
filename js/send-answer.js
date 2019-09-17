@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    document.getElementById('checkButton').onclick = function (e) {
+    document.getElementsByName('CheckButton')[0].onclick = function (e) {
         var pater=document.getElementsByClassName('main-text-only-one')[0].id;
         var title =pater[0];
         var part =pater[1];
@@ -22,15 +22,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         }
         if(part==2){
-            var name="radioInput";
-            for (var i = 0; i < 7; i++) {
+            //fooby[1][]
+            var name="fooby[";
+            for (var i = 1; i <= 7; i++) {
                 var added = 0;
-                var elem = document.getElementsByName(name + i);
+                var elem = document.getElementsByName(name + i+"][]");
                 for(var j = 0; j < 3; j++)
                 {
                     if(elem[j].checked)
                     {
-                        arr.push(elem[j].value);
+                        arr.push(j);
                         added = 1;
                     }
                 }
